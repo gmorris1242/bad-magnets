@@ -1,0 +1,34 @@
+//VARIABLES
+$yellow: #EECF4C;
+$black: black;
+
+//TYPOGRAPHY
+.logo {
+  color: black;
+  font-family: 'Joe';
+  font-size: 60px;
+
+  span { font-family: 'John'; color: #EECF4C}
+}
+
+.header { font-family: 'Joe'; }
+
+//HELPERS
+.text-center { text-align: center !important; }
+
+.hide {display: none !important; }
+
+.yellow { color: $yellow !important; }
+
+//ANIMATIONS
+@keyframes spin {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}

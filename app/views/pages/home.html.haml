@@ -1,45 +1,32 @@
-.background
-  .circle.c1
-    .black.half
-    .white.half
-  .circle.c2
-    .black.half
-    .white.half
-.container
-  %h1
-    %span bad
-    magnets
+#home
+  .background
+    .circle.c1
+      .yellow.half
+      .red.half
+    .circle.c2
+      .yellow.half
+      .red.half
+  .container
+    %h1.logo
+      = succeed 'magnets' do
+        %span bad
 
-.modal.m1.hide
-  .content.text-center
-    %h1
-      %span who
-      are you?
+  .modal.m1.hide
+    .content.text-center
+      .exit x
+      %h2.logo
+        %span who
+        are you?
 
-.modal.m2.hide
-  .content.text-center
-    %h1
-      %span what
-      are you doing here?
+  .modal.m2.hide
+    .content.text-center
+      .exit x
+      %h2.logo
+        %span what
+        are you doing here?
 
 :javascript
-  function openModal(modal) {
-    console.log(modal);
-    $(modal).css('display','flex');
-  };
-
-  $('.c1').click(function() {
-    openModal('.m1')
-  });
-
-  $('.c2').click(function() {
-    openModal('.m2')
-  });
-
-  $('.modal').click(function() {
-    $(this).hide();
-  });
-
-  // $('.modal .content').click(function(e) {
-  //   e.stopPropagation();
-  // });
+  $(document).ready(function() {
+    $('.c1').click(function() { BadMagnets.openModal('.m1') });
+    $('.c2').click(function() { BadMagnets.openModal('.m2') });
+  })
