@@ -1,7 +1,7 @@
 %header
   .row
     .column
-      %nav.md-show
+      %nav.left
         %ul
           %li.text= link_to 'Music', music_path
           %li.text= link_to 'News', news_path
@@ -10,7 +10,7 @@
           %h1.header-logo
             = succeed 'magnets' do
               %span bad
-      %nav.md-show
+      %nav.right
         %ul
           %li.text= link_to 'Media', '#'
           %li.text= link_to 'Contact', 'mailto:admin@badmagnets.com', target: '_blank'
