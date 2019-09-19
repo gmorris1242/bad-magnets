@@ -11,6 +11,7 @@ footer {
 
       i {
         color: $white;
+        transition: color 200ms;
 
         &:hover { color: $accent; }
       }

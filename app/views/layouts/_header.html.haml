@@ -1,5 +1,5 @@
 %header
-  .row
+  .row(data-aos="flip-down" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="0")
     .column
       %nav.left
         %ul
@@ -12,5 +12,8 @@
               %span bad
       %nav.right
         %ul
-          %li.text= link_to 'Media', '#'
+          %li.text.relative.drop-down-link
+            = link_to 'Media', '#'
+            %ul.drop-down
+              %li.text Coming Soon!
           %li.text= link_to 'Contact', 'mailto:admin@badmagnets.com', target: '_blank'

@@ -1,9 +1,9 @@
 #home
   %section
     .row.vert-align-center
-      .column.lg-5.lg-offset-1
+      .column.lg-5.lg-offset-1(data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="0")
         = image_tag 'BM_EP_I.jpg'
-      .column.lg-5.text-center
+      .column.lg-5.text-center(data-aos="flip-down" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="0")
         %h2.header Pre-Order Now
         .links
           = link_to '#change-me', target: '_blank' do
@@ -12,9 +12,9 @@
             %i.fab.fa-google-play
           = link_to 'https://music.apple.com/us/album/i-ep/1480181565?app=itunes&ign-mpt=uo%3D4', target: '_blank' do
             %i.fab.fa-itunes
-          = link_to '#change-me', target: '_blank' do
+          = link_to 'https://badmagnets.bandcamp.com/album/i', target: '_blank' do
             %i.fab.fa-bandcamp
-          = link_to '#change-me', target: '_blank' do
+          = link_to 'https://soundcloud.com/user-256166215', target: '_blank' do
             %i.fab.fa-soundcloud
           = link_to '#change-me', target: '_blank' do
             %i.fab.fa-amazon

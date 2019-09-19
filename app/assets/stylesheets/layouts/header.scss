@@ -16,6 +16,8 @@ header {
           text-decoration: none;
           margin: 10px;
           font-weight: bold;
+          transition: color 200ms;
+          display: inline-block;
 
           &:hover { color: $accent; }
         }
@@ -27,6 +29,22 @@ header {
       @media (min-width: 600px) {
         &.left { order: initial; }
         &.right { order: initial; }
+      }
+
+      .drop-down {
+        position: absolute;
+        border: 1px solid $dark;
+        background: $white;
+        padding: 5px;
+        min-width: 150px;
+        opacity: 0;
+        transition: opacity 200ms;
+      }
+
+      .drop-down-link:hover {
+        .drop-down {
+          opacity: 100;
+        }
       }
     }
   }

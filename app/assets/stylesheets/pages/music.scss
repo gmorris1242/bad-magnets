@@ -1,5 +1,9 @@
-#home {
+#music {
   .header { color: $accent; }
+
+  ul {
+    li { margin-bottom: .5rem; }
+  }
 
   .links {
     i {

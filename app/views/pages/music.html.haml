@@ -1,7 +1,9 @@
-#home
+#music
   %section
     .row.vert-align-center
-      .column.lg-5.text-right
+      .column.lg-5.lg-offset-1.lg-push-5(data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="0")
+        = image_tag 'BM_EP_I.jpg'
+      .column.lg-5.lg-text-center.lg-pull-5(data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="0")
         .text-left.inline-block
           %h2.header I
           %ul#selector
@@ -9,6 +11,7 @@
             %li.text 2. Rampage
             %li.text 3. Sensy
             %li.text 4. What We Left Behind
+            %li.text &copy; 2019
           .links
             = link_to '#change-me', target: '_blank' do
               %i.fab.fa-spotify
@@ -16,11 +19,9 @@
               %i.fab.fa-google-play
             = link_to 'https://music.apple.com/us/album/i-ep/1480181565?app=itunes&ign-mpt=uo%3D4', target: '_blank' do
               %i.fab.fa-itunes
-            = link_to '#change-me', target: '_blank' do
+            = link_to 'https://badmagnets.bandcamp.com/album/i', target: '_blank' do
               %i.fab.fa-bandcamp
-            = link_to '#change-me', target: '_blank' do
+            = link_to 'https://soundcloud.com/user-256166215', target: '_blank' do
               %i.fab.fa-soundcloud
             = link_to '#change-me', target: '_blank' do
               %i.fab.fa-amazon
-      .column.lg-5.lg-offset-1
-        = image_tag 'BM_EP_I.jpg'

@@ -3,6 +3,7 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta(name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+    %link{:href => "https://unpkg.com/aos@next/dist/aos.css", :rel => "stylesheet"}/
 
     %title Bad Magnets
     = csrf_meta_tags
@@ -14,3 +15,7 @@
     %main
       = yield
     = render 'layouts/footer'
+
+    %script(src="https://unpkg.com/aos@next/dist/aos.js")
+:javascript
+  AOS.init();

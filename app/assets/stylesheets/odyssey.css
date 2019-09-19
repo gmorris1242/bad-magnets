@@ -335,7 +335,24 @@ section {
 .inline-block { display: inline-block; }
 .block { display: block; }
 .relative { position: relative; }
-.flex-wrapper { display: flex; }
 .float-right { float: right; }
 .float-left { float: left; }
+
+/* TEXT HELPERS */
 .bold { font-weight: bold; }
+.italic { font-style: italic; }
+
+/* FLEX HELPERS */
+.flex-wrapper { display: flex; }
+
+/* MARGIN HELLPERS */
+.m-1 { margin: 1rem};
+.m-2 { margin: 2rem};
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mr-1 { margin-right: 1rem; }
+.mr-2 { margin-right: 2rem; }
+.ml-1 { margin-left: 1rem; }
+.ml-2 { margin-left: 2rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }

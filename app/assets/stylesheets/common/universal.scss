@@ -34,6 +34,7 @@ main {
   // flex-grow: 2;
 }
 
+
 //TYPOGRAPHY
 .header,
 .text {
@@ -41,8 +42,19 @@ main {
   text-transform: uppercase;
 }
 
-.header { font-family: 'John'; }
+.header {
+  font-family: 'John';
+  margin-bottom: .5rem;
+}
+
 .text { font-family: 'Joe'; }
 
-//HELPERS
+//COLOR HELPERS
 .yellow { color: $yellow; }
+
+//POSITION HELPERS
+.vert-align-center {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
