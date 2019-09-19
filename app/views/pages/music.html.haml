@@ -1,0 +1,26 @@
+#home
+  %section
+    .row.vert-align-center
+      .column.lg-5.text-right
+        .text-left.inline-block
+          %h2.header I
+          %ul#selector
+            %li.text 1. Bullshit
+            %li.text 2. Rampage
+            %li.text 3. Sensy
+            %li.text 4. What We Left Behind
+          .links
+            = link_to '#change-me', target: '_blank' do
+              %i.fab.fa-spotify
+            = link_to 'https://play.google.com/store/music/album/Bad_Magnets_I?id=Btpn7ds5tkr27z37ozaj27jv63y', target: '_blank' do
+              %i.fab.fa-google-play
+            = link_to 'https://music.apple.com/us/album/i-ep/1480181565?app=itunes&ign-mpt=uo%3D4', target: '_blank' do
+              %i.fab.fa-itunes
+            = link_to '#change-me', target: '_blank' do
+              %i.fab.fa-bandcamp
+            = link_to '#change-me', target: '_blank' do
+              %i.fab.fa-soundcloud
+            = link_to '#change-me', target: '_blank' do
+              %i.fab.fa-amazon
+      .column.lg-5.lg-offset-1
+        = image_tag 'BM_EP_I.jpg'

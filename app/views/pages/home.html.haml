@@ -1,32 +1,20 @@
 #home
-  .background
-    .circle.c1
-      .yellow.half
-      .red.half
-    .circle.c2
-      .yellow.half
-      .red.half
-  .container
-    %h1.logo
-      = succeed 'magnets' do
-        %span bad
-
-  .modal.m1.hide
-    .content.text-center
-      .exit x
-      %h2.header
-        %span who
-        are you?
-
-  .modal.m2.hide
-    .content.text-center
-      .exit x
-      %h2.header
-        %span what
-        are you doing here?
-
-:javascript
-  $(document).ready(function() {
-    $('.c1').click(function() { BadMagnets.openModal('.m1') });
-    $('.c2').click(function() { BadMagnets.openModal('.m2') });
-  })
+  %section
+    .row.vert-align-center
+      .column.lg-5.lg-offset-1
+        = image_tag 'BM_EP_I.jpg'
+      .column.lg-5.text-center
+        %h2.header Pre-Order Now
+        .links
+          = link_to '#change-me', target: '_blank' do
+            %i.fab.fa-spotify
+          = link_to 'https://play.google.com/store/music/album/Bad_Magnets_I?id=Btpn7ds5tkr27z37ozaj27jv63y', target: '_blank' do
+            %i.fab.fa-google-play
+          = link_to 'https://music.apple.com/us/album/i-ep/1480181565?app=itunes&ign-mpt=uo%3D4', target: '_blank' do
+            %i.fab.fa-itunes
+          = link_to '#change-me', target: '_blank' do
+            %i.fab.fa-bandcamp
+          = link_to '#change-me', target: '_blank' do
+            %i.fab.fa-soundcloud
+          = link_to '#change-me', target: '_blank' do
+            %i.fab.fa-amazon

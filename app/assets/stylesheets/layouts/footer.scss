@@ -1,0 +1,19 @@
+footer {
+  background: $dark;
+  padding: 5px 0;
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      i {
+        color: $white;
+
+        &:hover { color: $accent; }
+      }
+    }
+  }
+}

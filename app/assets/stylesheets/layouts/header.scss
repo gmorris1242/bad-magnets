@@ -1,0 +1,35 @@
+header {
+  .column {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    nav {
+      ul {
+        display: flex;
+        list-style: none;
+
+        li a {
+          color: $dark;
+          text-decoration: none;
+          margin: 10px;
+          font-weight: bold;
+
+          &:hover { color: $accent; }
+        }
+      }
+    }
+  }
+
+  .header-logo {
+    color: $accent;
+    font-family: 'Joe';
+    font-size: 45px;
+
+    span {
+      font-family: 'John';
+      color: $dark;
+    }
+  }
+}
