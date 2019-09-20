@@ -26,7 +26,7 @@ header {
       &.left { order: 2; }
       &.right { order: 3; }
 
-      @media (min-width: 600px) {
+      @media (min-width: 640px) {
         &.left { order: initial; }
         &.right { order: initial; }
       }
@@ -53,6 +53,9 @@ header {
     color: $accent;
     font-family: 'Joe';
     font-size: 45px;
+    order: 1;
+
+    @media (min-width: 640px) { order: initial; }
 
     span {
       font-family: 'John';

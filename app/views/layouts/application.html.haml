@@ -4,6 +4,8 @@
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta(name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
     %link{:href => "https://unpkg.com/aos@next/dist/aos.css", :rel => "stylesheet"}/
+    %title= content_for?(:title) ? yield(:title) : 'Bad Magnets'
+    %meta{ name: "description", content: content_for?(:description) ? yield(:description) : 'The official home of Bad Magnets.  Music that makes your TV break.'}
 
     %title Bad Magnets
     = csrf_meta_tags
@@ -15,7 +17,14 @@
     %main
       = yield
     = render 'layouts/footer'
+    = render 'modals/email_list'
 
     %script(src="https://unpkg.com/aos@next/dist/aos.js")
 :javascript
   AOS.init();
+
+  $(document).ready(function() {
+    $('.modal-open').click(function() {
+      BadMagnets.openModal($('.modal'));
+    });
+  });

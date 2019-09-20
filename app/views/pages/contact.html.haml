@@ -1,0 +1,24 @@
+= content_for :title, 'Contact | Bad Magnets'
+= content_for :description, 'Contact Bad Magnets for booking info and general questions.'
+
+%section
+  .row(data-aos="zoom-out" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="0")
+    .column.text-center.md-10.md-offset-1.contact-form
+      %h2.header Contact Bad Magnets
+
+      = form_for :contact, url: contact_index_path, remote: true do |f|
+        = f.invisible_captcha :subtitle
+        .row
+          .column.md-6
+            = f.text_field :name, placeholder: 'Name'
+          .column.md-6
+            = f.email_field :email, placeholder: 'Email'
+          .column.md-6
+            = f.text_field :city, placeholder: 'City'
+          .column.md-6
+            = f.text_field :state, placeholder: 'State'
+          .column
+            = f.text_area :message, placeholder: 'Message'
+          .column
+            .text-center
+              = f.submit 'Send'

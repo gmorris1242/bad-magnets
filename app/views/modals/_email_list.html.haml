@@ -1,0 +1,20 @@
+.modal.hide
+  .content
+    .exit x
+    .form
+      = form_for :email_list, url: email_list_index_path, remote: true do |f|
+        = f.invisible_captcha :subtitle
+        .row
+          .column.text-center
+            %h2.header.accent-color Mailing List Signup
+          .column.md-6
+            = f.text_field :name, placeholder: 'Name'
+          .column.md-6
+            = f.email_field :email, placeholder: 'Email'
+          .column.md-6
+            = f.text_field :city, placeholder: 'City'
+          .column.md-6
+            = f.text_field :state, placeholder: 'State'
+          .column
+            .text-center
+              = f.submit 'Sign Up'
