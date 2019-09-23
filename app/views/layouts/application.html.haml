@@ -5,7 +5,7 @@
     %meta(name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
     %link{:href => "https://unpkg.com/aos@next/dist/aos.css", :rel => "stylesheet"}/
     %title= content_for?(:title) ? yield(:title) : 'Bad Magnets'
-    %meta{ name: "description", content: content_for?(:description) ? yield(:description) : 'The official home of Bad Magnets.  Music that makes your TV break.'}
+    %meta{ name: "description", content: content_for?(:description) ? yield(:description) : 'The official home of Bad Magnets.  Music that breaks your TV.  New EP Out 9/27/19  Pre-order Now.'}
 
     %link{:href => "/apple-touch-icon.png", :rel => "apple-touch-icon", :sizes => "180x180"}/
     %link{:href => "/favicon-32x32.png", :rel => "icon", :sizes => "32x32", :type => "image/png"}/
@@ -15,6 +15,20 @@
     %meta{:content => "#ffffff", :name => "msapplication-TileColor"}/
     %meta{:content => "#ffffff", :name => "theme-color"}/
 
+    %meta{:content => "", :property => "fb:app_id"}/
+    %meta{:content => "#{content_for :card_url}", :property => "og:url"}/
+    %meta{:content => "website", :property => "og:type"}/
+    %meta{:content => "#{content_for :title}", :property => "og:title"}/
+    %meta{:content => "#{content_for :meta_description}", :property => "og:description"}/
+    %meta{:content => "#{asset_url 'BM_EP_I.jpg'}", :property => "og:image"}/
+
+    %meta{:content => "", :property => "og:markup_url"}/
+    %meta{:content => "summary_large_image", :name => "twitter:card"}/
+    %meta{:content => "@BadMagnets", :name => "twitter:site"}/
+    %meta{:content => "#{content_for :title}", :name => "twitter:title"}/
+    %meta{:content => "#{content_for :meta_description}", :name => "twitter:description"}/
+    %meta{:content => "#{content_for :card_url}", :name => "twitter:url"}/
+    %meta{:content => "#{asset_url 'BM_EP_I.jpg'}", :name => "twitter:image"}/
 
     %title Bad Magnets
     = csrf_meta_tags
