@@ -4,7 +4,7 @@
       %nav.left
         %ul
           %li.text= link_to 'Music', music_path
-          %li.text= link_to 'News', news_path
+          %li.text= link_to 'Live', '#'
       .logo
         = link_to root_path do
           %h1.header-logo
@@ -15,5 +15,5 @@
           %li.text.relative.drop-down-link
             = link_to 'Media', '#'
             %ul.drop-down
-              %li.text Coming Soon!
+              %li.text= link_to 'News', news_path
           %li.text= link_to 'Contact', contact_path

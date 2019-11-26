@@ -1,0 +1,8 @@
+#news {
+  a {
+    color: $dark;
+    transition: color 200ms;
+
+    &:hover { color: $accent; }
+  }
+}
