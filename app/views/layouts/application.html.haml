@@ -1,6 +1,8 @@
 !!!
 %html
   %head
+    = render 'layouts/google_analytics'
+
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta(name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
     %link{:href => "https://unpkg.com/aos@next/dist/aos.css", :rel => "stylesheet"}/
@@ -30,7 +32,6 @@
     %meta{:content => "#{content_for :card_url}", :name => "twitter:url"}/
     %meta{:content => "#{asset_url 'BM_EP_I.jpg'}", :name => "twitter:image"}/
 
-    %title Bad Magnets
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
