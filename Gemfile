@@ -36,6 +36,7 @@ gem "jquery-rails"
 gem 'font-awesome-sass', '~> 5.9.0'
 gem 'figaro'
 gem 'invisible_captcha'
+gem 'sitemap_generator'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
