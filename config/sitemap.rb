@@ -1,5 +1,5 @@
 # Set the host name for URL creation
-SitemapGenerator::Sitemap.default_host = "http://www.badmagnets.com"
+SitemapGenerator::Sitemap.default_host = "https://www.badmagnets.com"
 SitemapGenerator::Sitemap.compress = false
 
 SitemapGenerator::Sitemap.create do
