@@ -8,9 +8,9 @@
           .column.text-center
             %h2.header.accent-color Mailing List Signup
           .column.md-6
-            = f.text_field :name, placeholder: 'Name'
+            = f.text_field :name, placeholder: 'Name*', required: true
           .column.md-6
-            = f.email_field :email, placeholder: 'Email'
+            = f.email_field :email, placeholder: 'Email*', required: true
           .column.md-6
             = f.text_field :city, placeholder: 'City'
           .column.md-6

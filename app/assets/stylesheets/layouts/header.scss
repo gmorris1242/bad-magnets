@@ -54,6 +54,7 @@ header {
     font-family: 'Joe';
     font-size: 45px;
     order: 1;
+    word-spacing: -10px;
 
     @media (min-width: 640px) { order: initial; }
 

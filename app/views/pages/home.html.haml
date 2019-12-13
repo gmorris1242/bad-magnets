@@ -6,9 +6,23 @@
         = image_tag 'promo_2.jpg'
       .column.lg-5.text-center(data-aos="flip-down" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="0")
         %h2.header Listen
+        .p-2
+          .links
+            = link_to 'https://open.spotify.com/artist/3Kf1L4yUEfiU06KOZxz5xM', target: '_blank' do
+              %i.fab.fa-spotify
+            = link_to 'https://play.google.com/store/music/artist?id=A2qs5t4p55ujtlsjh62fyhxdety', target: '_blank' do
+              %i.fab.fa-google-play
+            = link_to 'https://music.apple.com/us/artist/bad-magnets/1479631752', target: '_blank' do
+              %i.fab.fa-itunes
+            = link_to 'https://badmagnets.bandcamp.com/releases', target: '_blank' do
+              %i.fab.fa-bandcamp
+            = link_to 'https://soundcloud.com/bad-magnets', target: '_blank' do
+              %i.fab.fa-soundcloud
+            = link_to 'https://www.amazon.com/gp/product/B07XXP5HJD', target: '_blank' do
+              %i.fab.fa-amazon
+        .p-2
+          %h2.header Support
+          .links
+            %iframe{:allowtransparency => "true", :frameborder => "0", :height => "26", :width => '100', :scrolling => "no", :src => "https://open.spotify.com/follow/1/?uri=spotify:artist:3Kf1L4yUEfiU06KOZxz5xM&size=basic&theme=dark&show-count=0", :style => "border:none; overflow:hidden;"}
 
-        %h2.header Follow Us
-        .links
-          %iframe{:allowtransparency => "true", :frameborder => "0", :height => "26", :width => '100', :scrolling => "no", :src => "https://open.spotify.com/follow/1/?uri=spotify:artist:3Kf1L4yUEfiU06KOZxz5xM&size=basic&theme=dark&show-count=0", :style => "border:none; overflow:hidden;"}
-
-          %iframe{:scrolling => "no", :src => "https://bandcamp.com/band_follow_button_classic/3557335329", :style => "border: 0;width: 175px;height: 33px;"}
+            %iframe{:scrolling => "no", :src => "https://bandcamp.com/band_follow_button_classic/3557335329", :style => "border: 0;width: 175px;height: 33px;"}

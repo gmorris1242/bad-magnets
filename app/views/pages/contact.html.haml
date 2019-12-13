@@ -10,15 +10,15 @@
         = f.invisible_captcha :subtitle
         .row
           .column.md-6
-            = f.text_field :name, placeholder: 'Name'
+            = f.text_field :name, placeholder: 'Name*', required: true
           .column.md-6
-            = f.email_field :email, placeholder: 'Email'
+            = f.email_field :email, placeholder: 'Email*', required: true
           .column.md-6
             = f.text_field :city, placeholder: 'City'
           .column.md-6
             = f.text_field :state, placeholder: 'State'
           .column
-            = f.text_area :message, placeholder: 'Message'
+            = f.text_area :message, placeholder: 'Message*', required: true
           .column
             .text-center
               = f.submit 'Send'
