@@ -393,6 +393,7 @@ a { text-decoration: none; }
 
 /* VISIBILITY HELPERS */
 .hide { display: none !important; }
+.invisible { visibility: hidden; }
 .md-show { display: none; }
 .md-show-inline { display: none; }
 .lg-show { display: none; }

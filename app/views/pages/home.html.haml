@@ -3,23 +3,12 @@
     %h1.hide Bad Magnets - Detroit Indie Music
     .row.vert-align-center
       .column.lg-5.lg-offset-1(data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="0")
-        = image_tag 'promo.jpg'
+        = image_tag 'promo_2.jpg'
       .column.lg-5.text-center(data-aos="flip-down" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="0")
-        %h2.header Listen Now
-        .links
-          = link_to 'https://open.spotify.com/album/1EzNLJMUmHB7wUvn8HtRUA', target: '_blank' do
-            %i.fab.fa-spotify
-          = link_to 'https://play.google.com/store/music/album/Bad_Magnets_I?id=Btpn7ds5tkr27z37ozaj27jv63y', target: '_blank' do
-            %i.fab.fa-google-play
-          = link_to 'https://music.apple.com/us/album/i-ep/1480181565', target: '_blank' do
-            %i.fab.fa-itunes
-          = link_to 'https://badmagnets.bandcamp.com/album/i', target: '_blank' do
-            %i.fab.fa-bandcamp
-          = link_to 'https://soundcloud.com/bad-magnets', target: '_blank' do
-            %i.fab.fa-soundcloud
-          = link_to 'https://www.amazon.com/gp/product/B07XXP5HJD', target: '_blank' do
-            %i.fab.fa-amazon
+        %h2.header Listen
 
-    -# .row
-    -#   = image_tag 'promo.jpg'
-    -#   .column
+        %h2.header Follow Us
+        .links
+          %iframe{:allowtransparency => "true", :frameborder => "0", :height => "26", :width => '100', :scrolling => "no", :src => "https://open.spotify.com/follow/1/?uri=spotify:artist:3Kf1L4yUEfiU06KOZxz5xM&size=basic&theme=dark&show-count=0", :style => "border:none; overflow:hidden;"}
+
+          %iframe{:scrolling => "no", :src => "https://bandcamp.com/band_follow_button_classic/3557335329", :style => "border: 0;width: 175px;height: 33px;"}

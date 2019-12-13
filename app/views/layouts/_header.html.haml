@@ -4,7 +4,7 @@
       %nav.left
         %ul
           %li.text= link_to 'Music', music_path
-          %li.text= link_to 'Live', '#'
+          %li.text= link_to 'Live', '#', class: 'invisible'
       .logo
         = link_to root_path do
           %h1.header-logo
@@ -12,8 +12,9 @@
               %span bad
       %nav.right
         %ul
-          %li.text.relative.drop-down-link
-            = link_to 'Media', '#'
-            %ul.drop-down
-              %li.text= link_to 'News', news_path
+          -# %li.text.relative.drop-down-link
+          -#   = link_to 'Media', '#'
+          -#   %ul.drop-down
+          -#     %li.text= link_to 'News', news_path
+          %li.text= link_to 'News', news_path
           %li.text= link_to 'Contact', contact_path
