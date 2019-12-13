@@ -1,6 +1,8 @@
 header {
+  padding: 10px 0;
+
   .column {
-    height: 90px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,11 +54,14 @@ header {
   .header-logo {
     color: $accent;
     font-family: 'Joe';
-    font-size: 40px;
+    font-size: 30px;
     order: 1;
     word-spacing: -10px;
 
-    @media (min-width: 640px) { order: initial; }
+    @media (min-width: 640px) {
+      order: initial;
+      font-size: 45px;
+    }
 
     span {
       font-family: 'John';
