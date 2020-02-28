@@ -4,12 +4,12 @@
       %nav.left
         %ul
           %li.text= link_to 'Music', music_path
-          %li.text= link_to 'Live', '#', class: 'invisible'
+          %li.text= link_to 'Live', live_path
       .logo
         = link_to root_path do
           %h1.header-logo
             = succeed ' MAGNETS' do
-              %span BAD
+              %span.dark BAD
       %nav.right
         %ul
           -# %li.text.relative.drop-down-link

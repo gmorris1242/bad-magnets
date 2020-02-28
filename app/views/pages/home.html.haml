@@ -1,10 +1,10 @@
 #home
   %section
     %h1.hide Bad Magnets - Detroit Indie Music
-    .row.vert-align-center
-      .column.lg-5.lg-offset-1(data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="0")
+    .row.vert-horz-center
+      .column.lg-5.lg-offset-1(data-aos="fade-right")
         = image_tag 'promo_2.jpg'
-      .column.lg-5.text-center(data-aos="flip-down" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="0")
+      .column.lg-6.text-center(data-aos="flip-down")
         .p-2
           %h2.header Listen
           .links
@@ -26,3 +26,5 @@
             %iframe{:allowtransparency => "true", :frameborder => "0", :height => "26", :width => '100', :scrolling => "no", :src => "https://open.spotify.com/follow/1/?uri=spotify:artist:3Kf1L4yUEfiU06KOZxz5xM&size=basic&theme=dark&show-count=0", :style => "border:none; overflow:hidden;"}
 
             %iframe{:scrolling => "no", :src => "https://bandcamp.com/band_follow_button_classic/3557335329", :style => "border: 0;width: 175px;height: 33px;"}
+
+= render 'modals/show'

@@ -42,14 +42,28 @@
       = yield
     = render 'layouts/footer'
     = render 'modals/email_list'
+
     .hide= render 'layouts/tags'
 
     %script(src="https://unpkg.com/aos@next/dist/aos.js")
-:javascript
-  AOS.init({disable: 'mobile'});
 
-  $(document).ready(function() {
-    $('.modal-open').click(function() {
-      BadMagnets.openModal($('.modal'));
-    });
-  });
+    :javascript
+      AOS.init({disable: 'mobile'});
+      $('head').append($("<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap' rel='stylesheet' />"))
+
+      $(document).ready(function() {
+        $('.modal-open').click(function() {
+          let modal = '#' + $(this).data('modal-open')
+          BadMagnets.openModal(modal);
+        });
+      });
+
+      let height = $('header').height();
+
+      let paddingTop = $('header').css('padding-top')
+      let paddingBottom = $('header').css('padding-bottom')
+      paddingTop = parseInt(paddingTop.substring(0, paddingTop.length - 2))
+      paddingBottom  = parseInt(paddingBottom.substring(0, paddingBottom.length - 2))
+      let padding = paddingTop + paddingBottom
+
+      $('main').css('padding-top', height + padding);

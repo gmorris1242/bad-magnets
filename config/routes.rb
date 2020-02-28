@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   get 'contact', to: "pages#contact",
                  as: 'contact'
 
+ get 'live', to: "pages#live",
+                as: 'live'
+
   resources :email_list, only: :create
   resources :contact, only: :create
 end

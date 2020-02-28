@@ -2,14 +2,40 @@
 = content_for :description, 'Stay up to date on the latest Bad Magnets news.'
 
 #news
-  %section.mb-4
+  %section
     .row
-      .column.lg-5.lg-offset-1.fade-in(data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="0")
+      .column.lg-offset-1.lg-5(data-aos="fade-right")
+        .text-center.mb-2
+          = image_tag '59_Edp.jpg'
+      .column.lg-5(data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="0")
+        %h1.header Bad Magnets Live June 13th, Loving Touch, Ferndale MI
+        %p.text.mb-1
+          Bad Magnets and Valerie The Vulture are making their LT debuts on the same summer night, and we couldn't be happier to welcome them.
+          %br
+          %br
+          Bad Magnets (the new project from The Satin Peaches veterans George Morris and Jesse Shepherd-Bates) debuted with a surprise EP, "I", in the fall of 2019. You can hear "I" for yourself here:
+          = link_to ' SPOTIFY', 'https://open.spotify.com/album/1EzNLJMUmHB7wUvn8HtRUA?si=U7h77SjSTUCyrH2R4mU19g', class: 'bold'
+          %br
+          %br
+          Valerie The Vulture (the latest from Willa Rae Music) announced themselves with the absurdly catchy "James Dean", also in the fall of 2019. Check out the video here:
+          = link_to ' YOUTUBE', 'https://www.youtube.com/watch?v=Xo38LIj8Oyc', class: 'bold'
+          %br
+          %br
+          Bad Magnets w/ Valerie The Vulture || June 13, 2020 || 8pm Doors || All Ages || $10 advance, $12 day of
+        %p.header
+          = link_to 'Get Tickets', 'https://www.ticketweb.com/event/bad-magnets-valerie-the-vulture-the-loving-touch-tickets/10461095?pl=lovingtouch&fbclid=IwAR1psgnQZyPdxFclhuyvpm2lqcfhJ8L7iPaF1rxY5d-kvkKU4NxJgM7kDME', target: '_blank'
+
+  %section
+    .row
+      .column.lg-5.lg-push-6(data-aos="fade-left")
+        .text-center.mb-2
+          = image_tag 'BM_EP_I.jpg'
+      .column.lg-5.lg-offset-1.lg-pull-5(data-aos="fade-right")
         %h1.header Longtime friends Bad Magnets take creative approach to catchy, atmospheric electro-pop
         %p.text.mb-1
           If this is the first you’re hearing of Bad Magnets, it’s because they don’t have a social media presence. That’s on purpose. “Yeah, that’s all bullshit,” is not only a candid indicator of their stance on that, but it’s also the melodically coiled one-line wording to the chorus of the first song on their new EP....
         %p.header
           = link_to 'Read Full Story', 'https://www.metrotimes.com/city-slang/archives/2019/09/26/longtime-friends-bad-magnets-take-creative-approach-to-catchy-atmospheric-electro-pop', target: '_blank'
         %p.text.mb-1 Jeff Milo - Metro Times
-      .column.lg-5.fade-in(data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="0")
-        = image_tag 'BM_EP_I.jpg'
+
+-# = render 'modals/show'

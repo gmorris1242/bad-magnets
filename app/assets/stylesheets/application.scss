@@ -1,9 +1,15 @@
+// @import "font-awesome-sprockets";
+// @import "font-awesome";
+// @import 'odyssey';
+// @import "common/universal";
+// @import "common/fonts";
+// @import "common/modal";
+// @import "common/forms";
+// @import "layouts/*";
+// @import "pages/*";
+
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import 'odyssey';
-@import "common/universal";
-@import "common/fonts";
-@import "common/modal";
-@import "common/forms";
-@import "layouts/*";
-@import "pages/*";
+@import 'theme/index';
+@import 'layouts/**/*';
+@import 'pages/**/*';

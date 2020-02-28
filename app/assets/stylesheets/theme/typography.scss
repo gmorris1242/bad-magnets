@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'John';
+  src: font-url('big-john.otf');
+}
+
+@font-face {
+  font-family: 'Joe';
+  src: font-url('slim-joe.otf');
+}
+
+$john: 'John';
+$joe: 'Joe';
+
+.header {
+  text-transform: uppercase;
+}
+
+.header {
+  font-family: $john;
+  margin-bottom: .5rem;
+}
+
+.text { font-family: 'Montserrat'; }
