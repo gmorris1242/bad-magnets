@@ -1,15 +1,15 @@
 %header
   .row(data-aos="flip-down" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="0")
     .column
+      .logo.text-center
+        = link_to root_path do
+          %h1.header-logo
+            %span.dark.john BAD
+            %span.joe.accent-color MAGNETS
       %nav.left
         %ul
           %li.text= link_to 'Music', music_path, class: 'joe'
           %li.text= link_to 'Live', live_path, class: 'joe'
-      .logo
-        = link_to root_path do
-          %h1.header-logo
-            = succeed ' MAGNETS' do
-              %span.dark BAD
       %nav.right
         %ul
           -# %li.text.relative.drop-down-link
