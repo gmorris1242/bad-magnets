@@ -21,3 +21,6 @@ $joe: 'Joe';
 }
 
 .text { font-family: 'Montserrat'; }
+
+.john { font-family: $john; }
+.joe { font-family: $joe; }
